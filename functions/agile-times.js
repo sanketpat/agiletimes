@@ -83,7 +83,7 @@ function addTimesheet(intent, session, callback) {
         const project = projectSlot.value;
         const category = categorySlot.value;
         sessionAttributes = createAttributes(project, category);
-        speechOutput = categorySlot && typeof(categorySlot.value) !== 'undefined' ? `Got it. Adding new timesheet to ${project} project, ${category} category.` : `Got it. Adding new timesheet to ${project} project.`;
+        speechOutput = categorySlot && typeof(categorySlot.value) !== 'undefined' ? `Got it Sanket. Adding new timesheet to ${project} project, ${category} category.` : `Got it Sanket. Adding new timesheet to ${project} project.`;
     } else {
         speechOutput = "I couldn't find that project name. Please try again.";
     }
